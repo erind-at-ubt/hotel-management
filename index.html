@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!-- This starts -->
+    <!-- This is header section -->
     <div class="container-fluid p-4 text-center" style="background-color: #fff;">
         <div class="row">
           <div class="col d-flex justify-content-center align-items-center">
@@ -31,7 +31,7 @@
           </div>
         </div>
     </div>
-
+    <!-- This is the start of dashboard -->
     <div class="container-fluid">
         <div class="row h-100">
             <div class="col-md-2 vh-100 d-flex flex-column pt-5 align-items-center"  style="background-color: #ECF3F3;">
@@ -44,11 +44,11 @@
                 
               
             </div>
-            <div class="col-md-10 vh-100 d-flex flex-column">
-                <div class="row p-3" style="background-color: #ECF3F3;">
+            <div class="col-md-10 p-5 vh-100 d-flex flex-column">
+                <div class="row pt-3 pb-2" style="background-color: #ECF3F3;">
                     <div class="col-md-2 d-flex flex-column ">
-                        <p>Today</p>
-                        <b><h3>10/12/2023</h3></b>
+                        <p id="current_day">Today</p>
+                        <b><h3 id="current_date">10/12/2023</h3></b>
                     </div>
                     <div class="col-md-10 d-flex flex-row align-items-center justify-content-end">
                         <select name="" id="rooms-select">
@@ -56,11 +56,57 @@
                             <option value="">All rooms</option>
                             <option value="">All rooms</option>
                         </select>
-                        <a class="btn theme-button" id="dashboard-button" href="#" role="button"><i class="fa-solid fa-plus"></i> Create New Booking</a>
+                        <a class="btn theme-button" id="dashboard-button" href="#" role="button"><i class="fa-solid fa-plus" style="margin-right: 10px;"></i>Create New Booking</a>
                     </div>
                 </div>
-                <div class="row p-3">
-                    content
+                <div class="row p-3" id="dashboard-content">
+                    <div class="col d-flex flex-column">
+                      <h5>Latest Bookings</h5>
+                      <div class="col d-flex flex-row card-container">
+                        <div class="col-md-2 booking-cards">
+                          <h6 class="card-title">Booking Title</h6>
+                          <p class="card-info card-number-persons"><i class="fa-solid fa-bed"></i> Deluxe Room</p>
+                          <p class="card-info card-number-persons"><i class="fa-solid fa-person"></i> 3 persons</p>
+                          <p class="card-info card-date"><i class="fa-solid fa-calendar-days"></i>28/04/2023</p>
+                          <b><p class="card-info card-person">Erind Blinishti</p></b>
+                          <a class="btn theme-button" id="dashboard-button" href="#" role="button" style="width: 150px; margin-left: -0px;" >See more</a>
+                        </div>
+                        <div class="col-md-2 booking-cards">
+                          <h6 class="card-title">Booking Title</h6>
+                          <p class="card-info card-number-persons"><i class="fa-solid fa-bed"></i> Deluxe Room</p>
+                          <p class="card-info card-number-persons"><i class="fa-solid fa-person"></i> 3 persons</p>
+                          <p class="card-info card-date"><i class="fa-solid fa-calendar-days"></i>28/04/2023</p>
+                          <b><p class="card-info card-person">Erind Blinishti</p></b>
+                          <a class="btn theme-button" id="dashboard-button" href="#" role="button" style="width: 150px; margin-left: -0px;" >See more</a>
+                        </div>
+                        <div class="col-md-2 booking-cards">
+                          <h6 class="card-title">Booking Title</h6>
+                          <p class="card-info card-number-persons"><i class="fa-solid fa-bed"></i> Deluxe Room</p>
+                          <p class="card-info card-number-persons"><i class="fa-solid fa-person"></i> 3 persons</p>
+                          <p class="card-info card-date"><i class="fa-solid fa-calendar-days"></i>28/04/2023</p>
+                          <b><p class="card-info card-person">Erind Blinishti</p></b>
+                          <a class="btn theme-button" id="dashboard-button" href="#" role="button" style="width: 150px; margin-left: -0px;" >See more</a>
+                        </div>
+                        <div class="col-md-2 booking-cards">
+                          <h6 class="card-title">Booking Title</h6>
+                          <p class="card-info card-number-persons"><i class="fa-solid fa-bed"></i> Deluxe Room</p>
+                          <p class="card-info card-number-persons"><i class="fa-solid fa-person"></i> 3 persons</p>
+                          <p class="card-info card-date"><i class="fa-solid fa-calendar-days"></i>28/04/2023</p>
+                          <b><p class="card-info card-person">Erind Blinishti</p></b>
+                          <a class="btn theme-button" id="dashboard-button" href="#" role="button" style="width: 150px; margin-left: -0px;" >See more</a>
+                        </div>
+                        <div class="col-md-2 booking-cards">
+                          <h6 class="card-title">Booking Title</h6>
+                          <p class="card-info card-number-persons"><i class="fa-solid fa-bed"></i> Deluxe Room</p>
+                          <p class="card-info card-number-persons"><i class="fa-solid fa-person"></i> 3 persons</p>
+                          <p class="card-info card-date"><i class="fa-solid fa-calendar-days"></i>28/04/2023</p>
+                          <b><p class="card-info card-person">Erind Blinishti</p></b>
+                          <a class="btn theme-button" id="dashboard-button" href="#" role="button" style="width: 150px; margin-left: -0px;" >See more</a>
+                        </div>
+                      </div>
+                      
+                      
+                    </div>
                 </div>
             </div>
           </div>
@@ -75,5 +121,6 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/19e928f6d9.js" crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
