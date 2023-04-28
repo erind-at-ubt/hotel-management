@@ -20,6 +20,7 @@
 #job-position{
     font-size: 10px;
     color: #666;
+    margin-left: -10px;
 }
 
 #user-content{
@@ -30,6 +31,17 @@
     padding: 10px;
     border: 1px solid #333;
     border-radius: 100px;
+}
+
+#logout-icon{
+    margin-left: 60px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#logout-icon:hover{
+    transform: scale(1.05);
+    transition: .3s;
 }
 
 .hotel-menu-nav{
@@ -80,6 +92,10 @@
 #rooms-select{
     font-size: 14px;
     padding: 6px 12px;
-    border: 5px solid #f0f0f0;
+    border: 2px solid #ebebeb;
     border-radius: 6px;
+    width: 120px;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
 }
