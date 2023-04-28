@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;700&display=swap');
+
+
+*{
+    font-family: 'Poppins';
+}
+
+#logo{
+    font-family:'Sigmar';
+    text-transform: uppercase;
+    color: #333;
+}
+
+#username-text{
+    font-size: 14px;   
+    margin-top: 12px;
+}
+
+#job-position{
+    font-size: 10px;
+    color: #666;
+}
+
+#user-content{
+    margin-left: 10px;
+}
+
+#username-icon{
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 100px;
+}
+
+.hotel-menu-nav{
+    width: 150px;
+    background-color: transparent;
+    color: #222;
+    letter-spacing: 1px;
+    font-family: 'Chakra Petch' !important;
+    font-size: 16px;
+    border: none;
+    margin-top: 30px;
+    text-align: start;
+}
+
+.hotel-menu-nav:hover{
+    transform: scale(1.05);
+    transition: .4s;
+    background-color: #069C31 !important;
+    color: #fff;
+
+}
+
+.hotel-menu-nav:focus{
+    background-color: #069C31;
+    box-shadow: #069c3044 0px 8px 24px 0px;
+    color: #fff;
+}
+
+.hotel-menu-nav i{
+    margin: 6px;
+}
+
+.theme-button{
+    background-color: #069C31;
+    color: white;
+    font-size: 14px;
+}
+
+.theme-button:hover{
+    background-color: #24af4b;
+    color: white;
+}
+
+#dashboard-button{
+    margin: 10px;
+}
+
+#rooms-select{
+    font-size: 14px;
+    padding: 6px 12px;
+    border: 5px solid #f0f0f0;
+    border-radius: 6px;
+}
