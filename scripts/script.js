@@ -1,3 +1,14 @@
+// preloader
+
+setTimeout(function(){
+    const preloader = document.getElementById('preloader');
+    preloader.style.display = 'none';
+    const content = document.getElementById('content');
+    content.classList.add('fade-in');
+    content.style.display = 'block';
+  }, 3000);
+
+// Dates and days
 function getCurrentDateEuropeanFormat() {
     const date = new Date();
     const day = String(date.getDate()).padStart(2, '0');
