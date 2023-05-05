@@ -17,7 +17,7 @@ try {
     echo "Connection failed: " . $e->getMessage();
 }
 
-// Close the connection
+// Close the connectionnnn
 $conn = null;
 
 ?>
