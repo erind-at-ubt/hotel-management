@@ -1,15 +1,71 @@
+<?php include '../includes/header.php';?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Register at Hotel Management System</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-        <link rel="stylesheet" href="styles\style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles\register.css">
+        <style>
+            .form-container{
+    background-color: white;
+    padding: 50px 20px !important;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.input-group{
+    color: #495057;
+    width: 100%;
+    
+}
+
+.input-group i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 0.5px solid #d6d6d6;
+    background-color: #f0f0f2;
+    width: 10%;
+    height: 36px;
+}
+
+.form-input{
+    width: 90%;
+    height: 36px;
+    outline: none;
+    border-radius: 4px;
+    border: 0.5px solid #d6d6d6;
+    padding-left: 8px;
+    color: #495057;
+    font-size: 15px;
+
+}
+
+.form-input::placeholder{
+    font-size: 14px;
+    color: #d6d6d6;
+}
+
+.chk-agreement{
+    /* width: 336px; */
+    
+    
+}
+
+.submit-button{
+    /* width: 336px; */
+    height: 36px;
+    background-color: #24af4b;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+
+#agree-terms:checked{
+    color: red;
+}
+        </style>
       </head>
 <body>
     <div class="container d-flex justify-content-center align-items-center vh-100">
@@ -49,11 +105,5 @@
                 </form>
         </div>
     </div>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/19e928f6d9.js" crossorigin="anonymous"></script>
-    <script src="/scripts/script.js"></script>
-    <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
 </body>
 </html>
