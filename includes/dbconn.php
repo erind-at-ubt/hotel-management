@@ -12,12 +12,12 @@ try {
     // Set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     echo "Connected successfully";
-    header("Location: /hotel-management/index.php");
+    // header("Location: /hotel-management/index.php");
 } catch(PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
 }
 
 // Close the connection
-$conn = null;
+// $conn = null;
 
 ?>

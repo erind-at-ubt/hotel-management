@@ -8,6 +8,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hotel Management System</title>
+    <style>
+      .guest-thumbnail{
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        object-fit: contain;
+      }
+    </style>
   </head>
   <body>
 
