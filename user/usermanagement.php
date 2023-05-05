@@ -46,7 +46,7 @@
         
         
             $query = "INSERT INTO users (username, email, userpassword) VALUES (:username, :email, :userpassword)";
-            $stmt = $pdo->prepare($query);
+            $stmt = $conn->prepare($query);
         
         
             $stmt->bindParam(':username', $username);
@@ -64,6 +64,33 @@
         }
         //elton bajraliu
 
+
+        function change_password($username, $current_password, $new_password, $conn) {
+            $query = "SELECT password_hash FROM users WHERE username = :username";
+            $stmt = $conn->prepare($query);
+        
+            $stmt->bindParam(':username', $username);
+        
+            $stmt->execute();
+            $result = $stmt->fetch(PDO::FETCH_ASSOC);
+            $password_hash = $result['password_hash'];
+        
+            if (password_verify($current_password, $password_hash)) {
+                $new_password_hash = password_hash($new_password, PASSWORD_DEFAULT, ['cost' => 10]);
+                $update_query = "UPDATE users SET password_hash = :new_password_hash WHERE username = :username";
+                $update_stmt = $conn->prepare($update_query);
+                $update_stmt->bindParam(':new_password_hash', $new_password_hash);
+                $update_stmt->bindParam(':username', $username);
+                $update_stmt->execute();
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        //crud added by Erind Blinishti
+
+        
     }
 
 ?>

@@ -4,7 +4,7 @@
       if(isset($_POST['submit'])){
 
         $user = new User();
-        $user->addUser(); 
+        // $user->addUser(); 
       }
 ?>
 <!DOCTYPE html>
