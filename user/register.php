@@ -1,4 +1,12 @@
-<?php include '../includes/header.php';?>
+<?php include '../includes/header.php';
+      include 'usermanagement.php';  
+
+      if(isset($_POST['submit'])){
+
+        $user = new User();
+        $user->addUser(); 
+      }
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -72,18 +80,18 @@
         <div class="form-container col-md-5 rounded d-flex flex-column">
                 <h4 class="text-center">Register Here</h4>
                 <hr>
-                <form action="" class="form d-flex flex-column align-items-center" >
+                <form action="" method="POST" class="form d-flex flex-column align-items-center" >
                     <div class="input-group p-3 d-flex flex-row align-items-center justify-content-center">
                         <i class="fa-solid fa-user p-2"></i>
-                        <input type="text" placeholder="Your Name" class="form-input">
+                        <input type="text" name="username" placeholder="Your Name" class="form-input">
                     </div>
                     <div class="input-group p-3 d-flex flex-row align-items-center justify-content-center">
                         <i class="fa-solid fa-envelope"></i>
-                        <input type="email" placeholder="Your Email" class="form-input">
+                        <input type="email" name="email" placeholder="Your Email" class="form-input">
                     </div>
                     <div class="input-group p-3 d-flex flex-row align-items-center justify-content-center">
                         <i class="fa-solid fa-lock"></i>
-                        <input type="password" placeholder="Your Password" class="form-input">
+                        <input type="password" name="userpassword" placeholder="Your Password" class="form-input">
                     </div>
                     <div class="input-group p-3 d-flex flex-row align-items-center justify-content-center">
                         <i class="fa-solid fa-lock"></i>
@@ -95,7 +103,7 @@
                     <label for="agree-terms" style="margin-left: 12px; " class="w-100" >I agree with the Terms & Conditions</label>
                    </div>
                    <div class="input-group p-3 d-flex flex-column">
-                    <input type="submit" value="Register Now" class="w-100 submit-button">
+                    <input type="submit" name="submit" value="Register Now" class="w-100 submit-button">
                     <p class="w-100 p-3 text-start">Already have an account? <a href="/main/login.html">Log in here</a></p>
                 </div>
                    

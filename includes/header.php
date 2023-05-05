@@ -1,7 +1,3 @@
-<?php
-    include 'dbconn.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,3 +23,9 @@
 
 </body>
 </html>
+
+<?php
+
+    include "dbconn.php";
+    $conn = new Model();
+?>
