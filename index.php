@@ -46,7 +46,7 @@
       <div class="row h-100">
           <div class="col-md-2 vh-100 d-flex flex-column pt-5 align-items-center"  style="background-color: #ECF3F3;">
               <a class="btn btn-primary hotel-menu-nav" href="index.html" role="button"><i class="fa-solid fa-house"></i> Home</a>
-              <a class="btn btn-primary hotel-menu-nav" href="room.html" role="button"><i class="fa-solid fa-bed"></i> Room</a>
+              <a class="btn btn-primary hotel-menu-nav" href="room.html" role="button"><i class="fa-solid fa-bed"></i> Rooms</a>
               <a class="btn btn-primary hotel-menu-nav" href="guest.html" role="button"><i class="fa-solid fa-user"></i> Guest</a>
               <a class="btn btn-primary hotel-menu-nav" href="booking.html" role="button"><i class="fa-solid fa-calendar"></i> Booking</a>
               <a class="btn btn-primary hotel-menu-nav" href="messages.html" role="button"><i class="fa-solid fa-envelope"></i> Message</a>
